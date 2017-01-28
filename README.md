@@ -4,6 +4,7 @@ usually i cannot show someOne my code frome commercial project (in case of priva
 but i can easily show some code sample from different public "competition" or to review
 
 this sample from Codingame.com -> where i make some fun code session, for last time.
+i just copy samples without any changings (so every object has name as Solution not the name of the file)
 
 u can also checkout my Codingame profile -> https://www.codingame.com/profile/e29f203c7aeab86de5da14fa8898d5cd5437171 and add me to "friend list"
 

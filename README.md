@@ -1,0 +1,1 @@
+# scala-sample-from-Codingame.com

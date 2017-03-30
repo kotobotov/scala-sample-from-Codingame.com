@@ -1,23 +1,32 @@
-# scala-sample-from-Codingame.com
+#Codingame ai algorithms challenges
 
-usually i cannot show someOne my code frome commercial project (in case of privace)
-but i can easily show some code sample from different public "competition" or to review
+Some of my solution for [Codingame](http://www.codingame.com/) platform. Here is [my profile](https://www.codingame.com/profile/e29f203c7aeab86de5da14fa8898d5cd5437171).
+more info about me and my projects at [kotobotov.ru](http://kotobotov.ru)
 
-this sample from Codingame.com -> where i make some fun code session, for last time.
-i just copy samples without any changings (so every object has name as Solution not the name of the file)
 
-u can also checkout my Codingame profile -> https://www.codingame.com/profile/e29f203c7aeab86de5da14fa8898d5cd5437171 and add me to "friend list"
+###Solved problems `Scala`:
 
-also i have some samples from Kaggle.com, and CodeForces.com
+| Easy | Medium | Hard | Expert
+| :---: | :---: | :---: | :---: |
+[Onboarding](src\main\scala\Onboarding\Player.scala)  | [Bender, a depressed robot](src\main\scala\Bender_Episode1\Solution.scala)  ||
+[Power of Thor](src\main\scala\Power_of_Thor\Player.scala) | [THERE IS NO SPOON - EPISODE 1](src\main\scala\There_is_no_Spoon_episode_1\Player.scala)||
+[The Descent](src\main\scala\The_Descent\Player.scala)  | [SHADOWS OF THE KNIGHT - EPISODE 1](src\main\scala\Shadows_of_the_Knight_Episode_1\Player.scala)||
+[Temperatures](src\main\scala\Temperature\Solution.scala)  | ||
+[Mars Lander - level 1](src\main\scala\Mars_lander\Player.scala)   |  ||
+[ASCII Art](src\main\scala\ASCII-art\Solution.scala)  |  ||
+[Chuck Norris](src\main\scala\Chuck-Norris\Solution.scala)  |  ||
+[MIME Type](src\main\scala\MIME_Type\Solution.scala)  | ||
+[Defibrillators](src\main\scala\Defebrilators\Solution.scala)  | ||
+[Horse-racing Duals](src\main\scala\Horse-racing\Solution.scala)  |||
+Complete : 100% | 18% ||
 
-each sample contains description of the task link to task and solution.
 
-============
-Я не могу где попало оставлять ссылки на куски кода из коммерческих проектов, вот для всех желающих поглядеть "код", выкладываю примеры из разных "соревновательных/развлекательных" сайтов. 
-КодинГеймс, прикольный проект, в последнее время понравилось именно там по фану писать всякие штуки, изза того что я визуально всё воспринимаю, а там очень хорошая система визуализации решений, вобщем в последнее время это мой любимий проект для практики и фана. 
+###Challenges:
 
-в каждом примере я постарался указать описание задачи, цель задачи (часто бывает не просто решить, а например решить наиболее коротким образом и тд), и добавил ссылочку на саму задачу в оригинале. 
+Challenge | Ranking
+| :---: | :---:|
+[Chost in the Cell](src\main\scala\Ghost_in_the_Cell\Player.scala)  | 566/3508
+[The Great Escape](src\main\scala\The_Great_Escape\Player.scala)  | -
+[Coders Strike Back](src\main\scala\Coders_Strike_Back\Player.scala)  | -
 
-любые комментарии приветствуются, особенно если они позволят улучшить результаты. 
-мой профиль: https://www.codingame.com/profile/e29f203c7aeab86de5da14fa8898d5cd5437171
-добавляйтесь в друзья. 
+

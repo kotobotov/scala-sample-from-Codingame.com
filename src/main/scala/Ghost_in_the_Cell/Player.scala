@@ -1,6 +1,7 @@
 
 
 /**
+  * https://www.codingame.com/multiplayer/bot-programming/ghost-in-the-cell
   * Created by kotobotov.ru on 26.02.2017.
   */
 

@@ -1,10 +1,10 @@
-#Codingame ai algorithms challenges#
+# Codingame ai algorithms challenges
 
 Some of my solution for [Codingame](http://www.codingame.com/) platform. Here is [my profile](https://www.codingame.com/profile/e29f203c7aeab86de5da14fa8898d5cd5437171).
 more info about me and my projects at [kotobotov.ru](http://kotobotov.ru)
 
 
-###Solved problems `Scala`:###
+### Solved problems `Scala`:
 
 | Easy | Medium | Hard | Expert
 | :---: | :---: | :---: | :---: |
@@ -21,7 +21,7 @@ more info about me and my projects at [kotobotov.ru](http://kotobotov.ru)
 Complete : 100% | 18% ||
 
 
-###Challenges:###
+### Challenges:
 
 Challenge | Ranking
 | :---: | :---:|

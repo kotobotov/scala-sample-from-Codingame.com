@@ -18,7 +18,7 @@ Challenge | Ranking
 [Onboarding](src/main/scala/Onboarding/Player.scala)  | [Bender, a depressed robot](src/main/scala/Bender_Episode1/Solution.scala)  | | | [The fastest](src/main/scala/The_Fastest/Solution.scala)
 [Power of Thor](src/main/scala/Power_of_Thor/Player.scala) | [THERE IS NO SPOON - EPISODE 1](src/main/scala/There_is_no_Spoon_episode_1/Player.scala)| | | [the Greatest number](src/main/scala/The_Greatest_number/Solution.scala)
 [The Descent](src/main/scala/The_Descent/Player.scala)  | [SHADOWS OF THE KNIGHT - EPISODE 1](src/main/scala/Shadows_of_the_Knight_Episode_1/Player.scala)|||
-[Temperatures](src/main/scala/Temperature/Solution.scala)  | |||
+[Temperatures](src/main/scala/Temperature/Solution.scala)  | [Skynet Revolution - Episode 1](src/main/scala/Skynet_Revolution_Episode_1/Player.scala) |||
 [Mars Lander - level 1](src/main/scala/Mars_lander/Player.scala)   |  |||
 [ASCII Art](src/main/scala/ASCII-art/Solution.scala)  |  |||
 [Chuck Norris](src/main/scala/Chuck-Norris/Solution.scala)  |  |||

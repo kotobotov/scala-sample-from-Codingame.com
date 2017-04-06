@@ -19,8 +19,8 @@ Challenge | Ranking
 [Power of Thor](src/main/scala/Power_of_Thor/Player.scala) | [THERE IS NO SPOON - EPISODE 1](src/main/scala/There_is_no_Spoon_episode_1/Player.scala)| | | [the Greatest number](src/main/scala/The_Greatest_number/Solution.scala)
 [The Descent](src/main/scala/The_Descent/Player.scala)  | [SHADOWS OF THE KNIGHT - EPISODE 1](src/main/scala/Shadows_of_the_Knight_Episode_1/Player.scala)|||
 [Temperatures](src/main/scala/Temperature/Solution.scala)  | [Skynet Revolution - Episode 1](src/main/scala/Skynet_Revolution_Episode_1/Player.scala) |||
-[Mars Lander - level 1](src/main/scala/Mars_lander/Player.scala)   |  |||
-[ASCII Art](src/main/scala/ASCII-art/Solution.scala)  |  |||
+[Mars Lander - level 1](src/main/scala/Mars_lander/Player.scala)   | [Mars Lander - Episode 2](src/main/scala/Mars_Lander_episode_2/Player.scala)  |||
+[ASCII Art](src/main/scala/ASCII-art/Solution.scala)  |  [Stock Exchange Losses](src/main/scala/Stock_Exchange_Losses/Solution.scala)|||
 [Chuck Norris](src/main/scala/Chuck-Norris/Solution.scala)  |  |||
 [MIME Type](src/main/scala/MIME_Type/Solution.scala)  | |||
 [Defibrillators](src/main/scala/Defebrilators/Solution.scala)  | |||

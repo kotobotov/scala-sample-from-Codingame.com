@@ -126,7 +126,7 @@ object Player extends App {
 
     def distance(to:Int):Int= {
       listOfNodes.find(item => item._1 == to)
-      .map(_._2).getOrElse(10000)
+        .map(_._2).getOrElse(10000)
     }
 
 
@@ -353,13 +353,13 @@ object Player extends App {
             .map(item => if (current.defenders > cells(item._1).defenders) {
 //                        Console.err.println(s"roi: ot ${current.id} dlia ${item._1} ${cells(item._1).getROI(item._2.toDouble)}")
               current.defenders = current.defenders - (cells(item._1).defenders + 1)
-              s"MOVE ${current.id } ${item._1 } ${cells(item._1).defenders.toInt + 1 }"
+              s"MOVE ${current.id } ${current.shorterPath(item._1) } ${cells(item._1).defenders.toInt + 1 }"
             }
             else {
               if (current.defenders == 0) ""
               else {
                 //                            Console.err.println(s"roi: ot ${current.id} dlia ${item._1} ${cells(item._1).getROI(item._2.toDouble)}")
-                val otvet = s"MOVE ${current.id } ${item._1 } ${cells(item._1).defenders.toInt }"
+                val otvet = s"MOVE ${current.id } ${current.shorterPath(item._1) } ${cells(item._1).defenders.toInt }"
                 current.defenders = 0
                 otvet
               }

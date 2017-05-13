@@ -25,7 +25,7 @@ Challenge | Ranking
 [MIME Type](src/main/scala/MIME_Type/Solution.scala)  | |||
 [Defibrillators](src/main/scala/Defebrilators/Solution.scala)  | |||
 [Horse-racing Duals](src/main/scala/Horse-racing/Solution.scala)  ||||
-Complete : 100% | 18% |||
+Complete : 100% | 38% |||
 
 
 

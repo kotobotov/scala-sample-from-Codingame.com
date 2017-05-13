@@ -29,19 +29,30 @@ object Player extends App {
 
   case class Mine(x: Int, y: Int)
 
-  object Status extends Enumeration{
-  val NOTVISITED, PLANTOVISIT, VISITED = values
+  trait Enum[A] {
+    trait Value { self: A =>
+      _values :+= this
+    }
+    private var _values = List.empty[A]
+    def values = _values
   }
 
+  object Status extends Enum[Status]
+  sealed trait Status extends Status.Value
+  case object NOTVISITED extends Status
+  case object PLANTOVISIT extends Status
+  case object VISITED extends Status
+
+
   class Cell(x: Int, y: Int) {
-    var status = Status.NOTVISITED
+    var status:Status = NOTVISITED
     var coord = (x, y)
     var energy = 0.0
 
     def isEven = (y % 2) == 0
 
     def toVisit(x: Int, y: Int) = if (x >0 && y>0)WorldMap.grid(x)(y).status match {
-      case Status.NOTVISITED => WorldMap.grid(x)(y).status = Status.PLANTOVISIT
+      case NOTVISITED => WorldMap.grid(x)(y).status = PLANTOVISIT
         WorldMap.nodeToVisit = WorldMap.grid(x)(y) :: WorldMap.nodeToVisit
       case _ =>
 

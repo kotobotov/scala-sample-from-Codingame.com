@@ -1,146 +1,182 @@
 
+sealed abstract class Cell
 
 /**
   * https://www.codingame.com/ide/puzzle/great-escape
   * © kotobotov.ru
+  * using Functional Reactive Programming
+  * https://en.wikipedia.org/wiki/Functional_reactive_programming
   * */
-object Player extends App {
-  // w: width of the board
-  // h: height of the board
-  // playercount: number of players (2 or 3)
-  // myid: id of my player (0 = 1st player, 1 = 2nd player, ...)
+
+
+import scala.util.DynamicVariable
+
+class Signal[T](expr: => T) {
+  import Signal._
+  private var myExpr: () => T = _
+  private var myValue: T = _
+  private var observers: Set[Signal[_]] = Set()
+  private var observed: List[Signal[_]] = Nil
+  update(expr)
+
+  protected def computeValue(): Unit = {
+    for (sig <- observed)
+      sig.observers -= this
+    observed = Nil
+    val newValue = caller.withValue(this)(myExpr())
+    if (myValue != newValue) {
+      myValue = newValue
+      val obs = observers
+      observers = Set()
+      obs.foreach(_.computeValue())
+    }
+  }
+
+  protected def update(expr: => T): Unit = {
+    myExpr = () => expr
+    computeValue()
+  }
+
+  def apply() = {
+    observers += caller.value
+    assert(!caller.value.observers.contains(this), "cyclic signal definition")
+    caller.value.observed ::= this
+    myValue
+  }
+}
+
+class Var[T](expr: => T) extends Signal[T](expr) {
+  override def update(expr: => T): Unit = super.update(expr)
+}
+
+object Var {
+  def apply[T](expr: => T) = new Var(expr)
+}
+
+object NoSignal extends Signal[Nothing](???) {
+  override def computeValue() = ()
+}
+
+object Signal {
+  val caller = new DynamicVariable[Signal[_]](NoSignal)
+  def apply[T](expr: => T) = new Signal(expr)
+}
+
+
+
+object Player extends App{
+  val moveCost = 1
+  val minimalWeight = -99
+  val initWeight = 99
 
   class Bot() {
     var x = 0
     var y = 0
-    var wallsleft = 0
+    var wallsLeft = 0
 
 
+    def nextDirection ={
+      myWorld.grid(x, y).getNextDirection
+    }
+
+    def goto(direction:String) ={
+      direction match {
+        case "LEFT" => x-=1
+        case "RIGHT" => x+=1
+        case "DOWN" => y+=1
+        case "UP" => y-=1
+      }
+    }
     def update(data1: Int, data2: Int, data3: Int) = {
       x = data1
       y = data2
-      wallsleft = data3
+      wallsLeft = data3
     }
   }
+  class WorldGrid(x:Int, y:Int) {
+    val data = Array.ofDim[Cell](high, wight)
+    for {
+      i <- 0 until high
+      j <- 0 until wight
+    } data(i)(j) = new Cell()
 
+    for {
+      x <- wight-1 to 0 by -1
+      y <- high-1 to 0 by -1
+    } {
+      //we could use Option to work with edges, but i just use very small weight on direction to absent cells (wich is abroad our world) that allowd to avoid using Nil and processing that Nil
+      // maybe i will rewrite code with Nil, just don't know how to use it correctly
+      // we multiply to (-1) to get positive weight based on witch direction is main goal
+      var d = 1
+      var r = 1
+      var l = 1
+
+      myid match {
+        case 0 => r = -1
+        case 1 => l = -1
+        case _ => d = -1
+      }
+
+      grid(x, y).down()= if(y < high - 1) grid(x, y + 1).getMax() - moveCost else minimalWeight * d
+      grid(x, y).up()= if(y > 0) grid(x, y - 1).getMax() - moveCost else minimalWeight
+      grid(x, y).left() = if(x > 0) grid(x - 1, y).getMax() - moveCost else minimalWeight * l
+      grid(x, y).right()= if(x < wight - 1) grid(x + 1, y).getMax() - moveCost else minimalWeight * r
+    }
+
+    def putWall(x: Int, y: Int, direction: String)={
+      Console.err.println(s"wall to ($x , $y) $direction")
+      direction match {
+        case "V" => grid(x, y).left() =0
+          grid(x, y + 1).left() =0
+          grid(x - 1, y).right() =0
+          grid(x - 1, y + 1).right() =0
+        case "H" => grid(x, y).up()=0
+          grid(x, y - 1).down()=0
+          grid(x+1, y).up() =0
+          grid(x +1, y - 1).down()=0
+      }
+    }
+
+
+    override def toString: String = data.map(item =>
+      item.map(_.getMax()).mkString("|"))
+                                    .mkString("\n")
+
+    def grid(x:Int, y:Int)= data(y)(x)
+  }
+  object WorldGrid{
+    def apply(x: Int, y: Int): WorldGrid = new WorldGrid(x, y)
+  }
+  class Cell {
+    val left = Var(0)
+    val right = Var(0)
+    val down = Var(0)
+    val up = Var(0)
+    private val directions = Seq((down, "DOWN"), (up, "UP"), (left, "LEFT"), (right, "RIGHT"))
+    val getMax = Var(directions.map(_._1()).max)
+    def getNextDirection = directions.maxBy(_._1())._2
+  }
+
+  val Array(wight, high, playercount, myid) = for (i <- readLine split (" ")) yield i.toInt
+  val myWorld = WorldGrid(wight,high)
   var bots = List[Bot]()
-
-  class Cell(input: Int) {
-    var revord = input
-    var left = 0
-    var right = 0
-    var down = 0
-    var up = 0
-
-    def setLeft(input: Int): Unit = {
-      left = input
-    }
-
-    def setRight(input: Int): Unit = {
-      right = input
-    }
-
-    def setUp(input: Int): Unit = {
-      up = input
-    }
-
-    def setDown(input: Int): Unit = {
-      down = input
-    }
-
-    def getMax(): String = {
-      if ((left > right) && (left > up) && (left > down)) "LEFT"
-      else if ((right > left) && (right > up) && (right > down)) "RIGHT"
-      else if ((down > right) && (down > up) && (down > left)) "DOWN" else "UP"
-    }
-
-    override
-    def toString: String = {
-      (s"\n    ($up)    \n") +
-        (s"($left)  $revord  ($right) \n") +
-        (s"  ($down)  \n")
-    }
-  }
-
-  val Array(w, h, playercount, myid) = for (i <- readLine split " ") yield i.toInt
-  var counter = 0
 
   for (i <- 0 until playercount) {
     bots ++= List[Bot](new Bot)
   }
 
-
-  val data = Array.ofDim[Cell](w, h)
-  for {
-    i <- 0 until w
-    j <- 0 until h
-  } data(i)(j) = myid match {
-    case 0 => new Cell((i * 100))
-    case 1 => new Cell(1000 - (i * 100))
-    case 2 => new Cell(j * 100)
-  }
-
-  def initRevords() = {
-    for {
-      i <- 0 until w
-      j <- 0 until h
-    } {
-      data(i)(j).left = try {
-        data(i - 1)(j).revord
-      } catch {
-        case e: Exception => 0
-      }
-      data(i)(j).right = try {
-        data(i + 1)(j).revord
-      } catch {
-        case e: Exception => 0
-      }
-      data(i)(j).up = try {
-        data(i)(j - 1).revord
-      } catch {
-        case e: Exception => 0
-      }
-      data(i)(j).down = try {
-        data(i)(j + 1).revord
-      } catch {
-        case e: Exception => 0
-      }
-    }
-
-  }
-
-  initRevords()
+  //myWorld.putWall(2, 2, "V")
+  //myWorld.putWall(2, 4, "V")
+  //myWorld.putWall(2, 5, "V")
+  //bots(myid).goto("DOWN")
+  //bots(myid).goto("DOWN")
+  //bots(myid).goto("DOWN")
+  //bots(myid).goto("DOWN")
+  //println("init pos: "+ bots(myid).x + "  "+ bots(myid).y)
 
 
-  object Position {
-    def getNextDirection(currentX: Int, currentY: Int) = {
-      val otvet = data(currentX)(currentY).getMax
-      println(otvet)
-      otvet match {
-        case "LEFT" => (currentX - 1, currentY)
-        case "RIGHT" => (currentX + 1, currentY)
-        case "DOWN" => (currentX, currentY + 1)
-        case "UP" => (currentX, currentY - 1)
-      }
-    }
-  }
 
-  def putWall(x: Int, y: Int, direction: String) = {
-    Console.err.println(s"wall to $x + $y + $direction")
-    direction match {
-      case "V" => data(x)(y).setLeft(0)
-        data(x)(y + 1).setLeft(0)
-        data(x - 1)(y).setRight(0)
-        data(x - 1)(y + 1).setRight(0)
-      case "H" => data(x)(y).setUp(0)
-        data(x + 1)(y).setUp(0)
-        data(x)(y - 1).setDown(0)
-        data(x + 1)(y - 1).setDown(0)
-    }
-  }
 
-  var CurrentPos = (0, 0)
-  // game loop
   while (true) {
     for (i <- 0 until playercount) {
       // x: x-coordinate of the player
@@ -153,18 +189,22 @@ object Player extends App {
     for (i <- 0 until wallcount) {
       // wallx: x-coordinate of the wall
       // wally: y-coordinate of the wall
-      // wallorientation: wall orientation ('H' or 'V')
-      val Array(_wallx, _wally, wallorientation) = readLine split " "
+      // wallOrientation: wall orientation ('H' or 'V')
+      val Array(_wallx, _wally, wallOrientation) = readLine split " "
       val wallx = _wallx.toInt
       val wally = _wally.toInt
 
-      putWall(wallx, wally, wallorientation)
+      myWorld.putWall(wallx, wally, wallOrientation)
     }
-
+    Console.err.println(myWorld.toString)
+    println(bots(myid).nextDirection)
     // Write an action using println
-
-    Position.getNextDirection(bots(myid).x, bots(myid).y)
+    //there's no need to update state (because bot state updated every step, but i calculate next position any way, in case we just want to simulate with out external data)
+    bots(myid).goto(bots(myid).nextDirection)
     // action: LEFT, RIGHT, UP, DOWN or "putX putY putOrientation" to place a wall
 
   }
+
+
+
 }

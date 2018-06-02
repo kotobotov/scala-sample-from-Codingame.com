@@ -24,8 +24,9 @@ Challenge | Ranking
 [Chuck Norris](src/main/scala/Chuck-Norris/Solution.scala)  | [Telephone-numbers](src/main/scala/Telephone/Solution.scala) |||
 [MIME Type](src/main/scala/MIME_Type/Solution.scala)  |[Conway Sequence](src/main/scala/Conway_Sequence/Solution.scala) |||
 [Defibrillators](src/main/scala/Defebrilators/Solution.scala)  | [The Gift](src/main/scala/The_Gift/Solution.scala) |||
-[Horse-racing Duals](src/main/scala/Horse-racing/Solution.scala)  |[Don't Panic Episode 1](src/main/scala/Don't_Panic_Episode_1/Solution.scala)|||
-Complete : 100% | 38% |||
+[Horse-racing Duals](src/main/scala/Horse-racing/Solution.scala)  |[Don't Panic Episode 1](src/main/scala/Don't_Panic_Episode_1/Player.scala)|||
+  |[The Last Crusade Episode 1](src/main/scala/The_Last_Crusade_Episode_1/Player.scala)|||
+Complete : 100% | 71% |||
 
 
 

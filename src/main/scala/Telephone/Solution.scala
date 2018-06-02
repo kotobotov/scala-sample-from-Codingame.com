@@ -1,5 +1,6 @@
 /**
   * Created by Kotobotov.ru on 02.06.2018.
+  * https://www.codingame.com/training/medium/telephone-numbers
   */
 import math._
 import scala.util._

@@ -26,7 +26,7 @@ Challenge | Ranking
 [Defibrillators](src/main/scala/Defebrilators/Solution.scala)  | [The Gift](src/main/scala/The_Gift/Solution.scala) |||
 [Horse-racing Duals](src/main/scala/Horse-racing/Solution.scala)  |[Don't Panic Episode 1](src/main/scala/Don't_Panic_Episode_1/Player.scala)|||
   ||[The Last Crusade Episode 1](src/main/scala/The_Last_Crusade_Episode_1/Player.scala)|| [A-star exercise](src/main/scala/Astar/Solution.scala)
-[2 Egg problem](src/main/scala/Egg_problem/Solution.scala)  || ||
+[2 Egg problem](src/main/scala/Egg_problem/Solution.scala)  | [Dwarfs standing on the shoulders of giants](src/main/scala/Dwarfs_standing_on_the_shoulders_of_giants/Solution.scala)| [Scrabble](src/main/scala/Scrabble/Solution.scala) |[Network Cabling](src/main/scala/Network_Cabling/Solution.scala)|
 
 
 

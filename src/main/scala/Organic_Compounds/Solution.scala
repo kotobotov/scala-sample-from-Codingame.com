@@ -41,14 +41,11 @@ object Solution extends App {
     }.toArray ++ Array(Array.fill[Carbon](maxElementsSize)(NoLink)) // need at least 2 argument (so 2x2 matrix - minimum)
 
   def validationTest(input: Array[Array[Carbon]]) = {
-    def eval(arg1: Carbon, arg2: Carbon) = {
-      arg1 match {
-        case Link(n) =>
+    def eval(arg1: Carbon, arg2: Carbon) = { (arg1, arg2)
+       match {
+        case (Link(n), _) =>
           arg2.allowedLinks -= n
-        case _ =>
-      }
-      arg2 match {
-        case Link(n) =>
+        case (_, Link(n))=>
           arg1.allowedLinks -= n
         case _ =>
       }

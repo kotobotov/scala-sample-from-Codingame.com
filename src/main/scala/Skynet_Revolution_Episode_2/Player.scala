@@ -1,6 +1,3 @@
-package Skynet_Revolution_Episode_2
-
-
 
 /**
   * Auto-generated code below aims at helping you parse

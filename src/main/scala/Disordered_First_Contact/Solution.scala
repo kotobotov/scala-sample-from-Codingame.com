@@ -1,12 +1,10 @@
-
-/**
- * Created by Kotobotov.ru on 10.10.2018.
- */
-import math._
-import scala.util._
 import scala.annotation.tailrec
 
+/**
+  * Created by Kotobotov.ru on 10.10.2018.
+  */
 object Solution extends App {
+
   def encode(input: String): String = {
     @tailrec
     def helper(in: List[Char], out: List[Char], take: Int): List[Char] = {
@@ -39,18 +37,20 @@ object Solution extends App {
           helper(rest, right, target ++ targetLocalPart, take + 1)
       }
     }
-    val (left, right) = input.splitAt(normalizeSize(input.size) / 2)
+    val (left, right) = input.splitAt(((normalizeSize(input.size))).ceil.toInt)
     if (input.size == 0) ""
     else helper(left.toList, right.toList, Nil, 1).mkString
   }
 
-  def normalizeSize(start: Int) = {
+  def normalizeSize(start: Int): Int = {
     var n = math.sqrt(start).floor
     def аrithmeticSum(n: Double) = (((n + 1.0) / 2.0) * n)
     while (аrithmeticSum(n) < start) {
       n += 1.0
     }
-    аrithmeticSum(n).toInt
+    n
+    if (n.toInt % 2 != 0) ((((n - 1) + 2.0) / 2.0) * (n - 1) / 2).toInt
+    else start - ((n / 2.0) * n / 2).toInt
   }
 
   var count = readInt
@@ -65,4 +65,5 @@ object Solution extends App {
     }
   }
   println(message)
+
 }

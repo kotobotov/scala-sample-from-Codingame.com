@@ -1,5 +1,3 @@
-package The_Last_Crusade_Episode_1
-
 /**
   * Created by Kotobotov.ru on 02.06.2018.
   * https://www.codingame.com/ide/puzzle/the-last-crusade-episode-1
@@ -61,8 +59,8 @@ object Player extends App {
     1 -> Cell("╬", Down),
     2 -> Cell("═", LeftAndRight),
     3 -> Cell("║", Down),
-    4 -> Cell("Y", LeftAndDown), // not implemented
-    5 -> Cell("X", RightAndDown), // not implemented
+    4 -> Cell("▚", LeftAndDown), // not implemented
+    5 -> Cell("▞", RightAndDown), // not implemented
     6 -> Cell("╩", LeftAndRight),
     7 -> Cell("╠", Down),
     8 -> Cell("╦", Down),
@@ -70,7 +68,7 @@ object Player extends App {
     10 -> Cell("╝", Left),
     11 -> Cell("╚", Right),
     12 -> Cell("╔", Down),
-    13 -> Cell("╕", Down)
+    13 -> Cell("╗", Down)
   )
 
   case class Bot(startPos: Pos, currentDirection:String) {

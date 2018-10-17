@@ -20,9 +20,9 @@ object Solution extends App {
       @tailrec
       def helper(in: List[Char], target: List[Char], result: Int): Int = {
         val result = if ((in zip target).forall {
-                           case (left, right) => left == right
-                         }) in.size
-        else 0
+          case (left, right) => left == right
+        }) in.size min target.size
+                     else 0
 
         in match {
           case Nil               => result
@@ -42,12 +42,12 @@ object Solution extends App {
     }
   }
 
-  val maxMergedParts = genoms
-    .map(_.sliding(2).collect {
-      case input: Vector[Int] => mergeByIndex(input(0), input(1))
-    }.sum)
-    .max
+  val maxMergedParts = if(n<=0) 0 else genoms
+                                       .map(_.sliding(2).collect {
+                                         case Vector(a, b) => mergeByIndex(a, b)
+                                       }.sum)
+                                       .max
 
-  println(genomCode.map(_.length).sum - maxMergedParts)
+  println(genomCode.map(_.length).sum - maxMergedParts )
 
 }

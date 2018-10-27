@@ -29,6 +29,7 @@ Challenge | Ranking
 [2 Egg problem](src/main/scala/Egg_problem/Solution.scala)  | [Dwarfs standing on the shoulders of giants](src/main/scala/Dwarfs_standing_on_the_shoulders_of_giants/Solution.scala)| [Scrabble](src/main/scala/Scrabble/Solution.scala) |[Network Cabling](src/main/scala/Network_Cabling/Solution.scala)|
 | |[Organic Compounds](src/main/scala/Organic_Compounds/Solution.scala) | [Bank Robbers](src/main/scala/Bank_Robbers/Solution.scala)||[Numeral_system](src/main/scala/Numeral_system/Solution.scala)
 | |[Elementary cellular automaton](src/main/scala/Cellular_automaton/Solution.scala) || [Disordered First Contact](src/main/scala/Disordered_First_Contact/Solution.scala) | [Genome Sequencing](src/main/scala/Genome_Sequencing/Solution.scala) 
+| | [The_Last_Crusade_Episode_2](src/main/scala/The_Last_Crusade_Episode_2/Player.scala)
 
 
 

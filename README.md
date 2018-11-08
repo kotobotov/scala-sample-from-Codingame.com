@@ -59,64 +59,64 @@ The River II. |	 Flood fill Example |	 Hit the road |	 The water jug riddle from
 The Travelling Salesman Problem |	 Folding Paper |	 Horn-SAT solver |	 Ticket to Ride: Europe |
 What's so complex about Mandelbrot? |	 Game of life |	 Inertia ride |	 Unflood The World |
 XML MDF-2016 |	 Gravity Centrifuge Tuning |	 KGood |	 Unfolding paper |
-- |  	 Gravity Centrifuge |	 Kolakoski Sequence |	 Vox Codei - Episode 2 |
-- |	 Gravity |	 Laser and mirrors |	 Xorandor |
-- |	 Hidden word |	 Levenshtein distance |		|
-- |	 Horse-hyperracing Hyperduals |	 Magic count of numbers |		|
-- |	 HTML table cell split |	 Max Rect |		|
-- |	 Kaprekar's routine |	 Mini sudoku solver |		|
-- |	 Langton's ant |	 Mis?re Nim |		|
-- |	 Locked in gear |	 Monday Tuesday Happy Days |		|
-- |	 Magic Square |	 Monte Carlo Tree Search exercise |		|
-- |	 Magic stones |	 Musical Intervals |		|
-- |	 [Mars Lander - Episode 2](src/main/scala/Mars_Lander_episode_2/Player.scala) |	 Mystery sums |		|
-- |	 Maximum sub-sequence | [n Queens](src/main/scala/N_Queens/Solution.scala) |		|
-- |	 Mayan Calculation |	 Neighbor-Sum Grids |		|
-- |	 Maze |	 Order of Oopserations! |		|
-- |	 Micro Assembly |	 Paper-folding curve |		|
-- |	 Minimal number of swaps |	 Parsing context-free grammar |		|
-- |	 Minimax exercise |	 Pascal Trapezoid |		|
-- |	 Monthly System |	 Porcupine Fever |		|
-- |	 Near-Palindromes |	 Power of Thor - Episode 2 |		|
-- |	 [Network Cabling](src/main/scala/Network_Cabling/Solution.scala) |	 Quarternion Multiplication |		|
-- |	 Next car license plate  ? |	 Remainder Fantasy |		|
-- |	 Number of letters in a number - Binary |	 Reverse Polish Notation |		|
-- |	 Number of paths between 2 points |	 Rocket mice |		|
-- |	 [Numeral_system](src/main/scala/Numeral_system/Solution.scala) |	 Roller Coaster |		|
-- |	 Othello |	 Simple CPU Emulation 1 |		|
-- |	 Paper labyrinth |	 Simple safecracking |		|
-- |	 Plight Of The Fellowship Of The Ring |	 Simplify Selection Ranges |		|
-- |	 Polydivisible number |	 Skynet Revolution - Episode 2 |		|
-- |	 Queneau Numbers |	 Spreadsheet Labels |		|
-- |	 Reversed Look-and-say |	 Sum of odd |		|
-- |	 Rubik? |	 Super Computer |		|
-- |	 Sandpile addition |	 Surface |		|
-- |	 [Scrabble](src/main/scala/Scrabble/Solution.scala) |	 Symbolic system of equations |		|
-- |	 [Shadows of the Knight - Episode 1](src/main/scala/Shadows_of_the_Knight_Episode_1/Player.scala)|	 TAN Network |		|
-- |	 Short accounts make long friends |	 Test before Validate! |		|
-- |	 Simple fraction to mixed number |	 Tetris |		|
-- |	 Simplified Monopoly? Turns Prediction |	 The Beautiful sequence |		|
-- |	 [Skynet Revolution - Episode 1](src/main/scala/Skynet_Revolution_Episode_1/Player.scala) |	 The Bridge |		|
-- |	 Snake encoding |	 The Burglar's Dilemna |		|
-- |	 [Stock Exchange Losses](src/main/scala/Stock_Exchange_Losses/Solution.scala) |	 The Empire Enigma |		|
-- |	 Straddling Checkerboard Cryptography | [The greatest number](src/main/scala/The_Greatest_number/Solution.scala) |		|
-- |	 Sum of divisors |	 The Highest Building |		|
-- |	 Teads Sponsored Contest |	 The Holy Grail |		|
-- |	 [Telephone Numbers](src/main/scala/Telephone/Solution.scala) |	 The hungry duck - part 1 |		|
-- |	 Text alignment |	 The hungry duck - part 2 |		|
-- |	 Text formatting |	 The Labyrinth |		|
-- |	 The experience for creating puzzles |	[The Last Crusade - Episode 2](src/main/scala/The_Last_Crusade_Episode_2/Player.scala) |		|
-- |	 [The Fastest](src/main/scala/The_Fastest/Solution.scala)|	 The max surface box |		|
-- |	 [The Gift](src/main/scala/The_Gift/Solution.scala) |	 The Total is Right - Weird edition |		|
-- |	 The Grand Festival - I |	 There is no Spoon - Episode 2 |		|
-- |	 The Grand Festival - II |	 Timer for Clash of Code |		|
-- |	 [The Last Crusade - Episode 1](src/main/scala/The_Last_Crusade_Episode_1/Player.scala) |	 To Sky's Edge |		|
-- |	 The Optimal Urinal Problem |	 Turing machine |		|
-- |	 The Ultimate Test |	 TXT2HTML |		|
-- |	 The Urinal Problem |	 Universe Conquest |		|
-- |	 [There is no Spoon - Episode 1](src/main/scala/There_is_no_Spoon_episode_1/Player.scala) |	 Vortex |		|
-- |	 These Romans are crazy! |	 Vox Codei - Episode 1 |		|
-- |	 Trits (Balanced Ternary Computing) |	 Wall Street |		|
-- |	 Vote counting |	 Winamax Sponsored Contest |		|
-- |	 War |	 X egg problem |		|
-- |		|	 Zergling rush |		|
+_ |  	 Gravity Centrifuge |	 Kolakoski Sequence |	 Vox Codei - Episode 2 |
+_ |	 Gravity |	 Laser and mirrors |	 Xorandor |
+_ |	 Hidden word |	 Levenshtein distance |		|
+_ |	 Horse-hyperracing Hyperduals |	 Magic count of numbers |		|
+_ |	 HTML table cell split |	 Max Rect |		|
+_ |	 Kaprekar's routine |	 Mini sudoku solver |		|
+_ |	 Langton's ant |	 Mis?re Nim |		|
+_ |	 Locked in gear |	 Monday Tuesday Happy Days |		|
+_ |	 Magic Square |	 Monte Carlo Tree Search exercise |		|
+_ |	 Magic stones |	 Musical Intervals |		|
+_ |	 [Mars Lander - Episode 2](src/main/scala/Mars_Lander_episode_2/Player.scala) |	 Mystery sums |		|
+_ |	 Maximum sub-sequence | [n Queens](src/main/scala/N_Queens/Solution.scala) |		|
+_ |	 Mayan Calculation |	 Neighbor-Sum Grids |		|
+_ |	 Maze |	 Order of Oopserations! |		|
+_ |	 Micro Assembly |	 Paper-folding curve |		|
+_ |	 Minimal number of swaps |	 Parsing context-free grammar |		|
+_ |	 Minimax exercise |	 Pascal Trapezoid |		|
+_ |	 Monthly System |	 Porcupine Fever |		|
+_ |	 Near-Palindromes |	 Power of Thor - Episode 2 |		|
+_ |	 [Network Cabling](src/main/scala/Network_Cabling/Solution.scala) |	 Quarternion Multiplication |		|
+_ |	 Next car license plate  ? |	 Remainder Fantasy |		|
+_ |	 Number of letters in a number - Binary |	 Reverse Polish Notation |		|
+_ |	 Number of paths between 2 points |	 Rocket mice |		|
+_ |	 [Numeral_system](src/main/scala/Numeral_system/Solution.scala) |	 Roller Coaster |		|
+_ |	 Othello |	 Simple CPU Emulation 1 |		|
+_ |	 Paper labyrinth |	 Simple safecracking |		|
+_ |	 Plight Of The Fellowship Of The Ring |	 Simplify Selection Ranges |		|
+_ |	 Polydivisible number |	 Skynet Revolution - Episode 2 |		|
+_ |	 Queneau Numbers |	 Spreadsheet Labels |		|
+_ |	 Reversed Look-and-say |	 Sum of odd |		|
+_ |	 Rubik? |	 Super Computer |		|
+_ |	 Sandpile addition |	 Surface |		|
+_ |	 [Scrabble](src/main/scala/Scrabble/Solution.scala) |	 Symbolic system of equations |		|
+_ |	 [Shadows of the Knight - Episode 1](src/main/scala/Shadows_of_the_Knight_Episode_1/Player.scala)|	 TAN Network |		|
+_ |	 Short accounts make long friends |	 Test before Validate! |		|
+_ |	 Simple fraction to mixed number |	 Tetris |		|
+_ |	 Simplified Monopoly? Turns Prediction |	 The Beautiful sequence |		|
+_ |	 [Skynet Revolution - Episode 1](src/main/scala/Skynet_Revolution_Episode_1/Player.scala) |	 The Bridge |		|
+_ |	 Snake encoding |	 The Burglar's Dilemna |		|
+_ |	 [Stock Exchange Losses](src/main/scala/Stock_Exchange_Losses/Solution.scala) |	 The Empire Enigma |		|
+_ |	 Straddling Checkerboard Cryptography | [The greatest number](src/main/scala/The_Greatest_number/Solution.scala) |		|
+_ |	 Sum of divisors |	 The Highest Building |		|
+_ |	 Teads Sponsored Contest |	 The Holy Grail |		|
+_ |	 [Telephone Numbers](src/main/scala/Telephone/Solution.scala) |	 The hungry duck - part 1 |		|
+_ |	 Text alignment |	 The hungry duck - part 2 |		|
+_ |	 Text formatting |	 The Labyrinth |		|
+_ |	 The experience for creating puzzles |	[The Last Crusade - Episode 2](src/main/scala/The_Last_Crusade_Episode_2/Player.scala) |		|
+_ |	 [The Fastest](src/main/scala/The_Fastest/Solution.scala)|	 The max surface box |		|
+_ |	 [The Gift](src/main/scala/The_Gift/Solution.scala) |	 The Total is Right - Weird edition |		|
+_ |	 The Grand Festival - I |	 There is no Spoon - Episode 2 |		|
+_ |	 The Grand Festival - II |	 Timer for Clash of Code |		|
+_ |	 [The Last Crusade - Episode 1](src/main/scala/The_Last_Crusade_Episode_1/Player.scala) |	 To Sky's Edge |		|
+_ |	 The Optimal Urinal Problem |	 Turing machine |		|
+_ |	 The Ultimate Test |	 TXT2HTML |		|
+_ |	 The Urinal Problem |	 Universe Conquest |		|
+_ |	 [There is no Spoon - Episode 1](src/main/scala/There_is_no_Spoon_episode_1/Player.scala) |	 Vortex |		|
+_ |	 These Romans are crazy! |	 Vox Codei - Episode 1 |		|
+_ |	 Trits (Balanced Ternary Computing) |	 Wall Street |		|
+_ |	 Vote counting |	 Winamax Sponsored Contest |		|
+_ |	 War |	 X egg problem |		|
+_ |		|	 Zergling rush |		|

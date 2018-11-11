@@ -3,6 +3,8 @@
 Some of my solution for [Codingame](http://www.codingame.com/) platform. Here is [my profile](https://www.codingame.com/profile/e29f203c7aeab86de5da14fa8898d5cd5437171).
 more info about me and my projects at [kotobotov.ru](http://kotobotov.ru)
 
+feel free so add some solution's
+
 ### Challenges `Scala`:
 
 Challenge | Ranking
@@ -15,7 +17,7 @@ Challenge | Ranking
 
 | Easy | Medium | Hard | Expert | 
 | :---: | :---: | :---: | :---: | 
-1x1x1 Rubik's cube movements |	 1010(1) |	 7-segment display |	 Binary neural network - Part 1 |
+[1x1x1 Rubik's cube movements](src/main/scala/Cubik1/Solution.scala) |	 1010(1) |	 7-segment display |	 Binary neural network - Part 1 |
 Add'em Up |	 2-player game on a calculator |	 Alternative vote |	 Binary neural network - Part 2 |
 [ASCII Art](src/main/scala/ASCII-art/Solution.scala) |	 2x2x2 Rubik's cube movements |	 Anagrams |	 Bulls and Cows |
 Balanced ternary computer: encode |	 2.5D maze |	 Apple tree |	 CG Chat interpreter - Part 1 |

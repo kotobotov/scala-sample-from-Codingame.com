@@ -106,7 +106,7 @@ _ |	 Sum of divisors |	 The Highest Building |		|
 _ |	 Teads Sponsored Contest |	 The Holy Grail |		|
 _ |	 [Telephone Numbers](src/main/scala/Telephone/Solution.scala) |	 The hungry duck - part 1 |		|
 _ |	 Text alignment |	 The hungry duck - part 2 |		|
-_ |	 Text formatting |	 The Labyrinth |		|
+_ |	 [Text formatting](src/main/scala/Text_Formating/Solution.scala) |	 The Labyrinth |		|
 _ |	 The experience for creating puzzles |	[The Last Crusade - Episode 2](src/main/scala/The_Last_Crusade_Episode_2/Player.scala) |		|
 _ |	 [The Fastest](src/main/scala/The_Fastest/Solution.scala)|	 The max surface box |		|
 _ |	 [The Gift](src/main/scala/The_Gift/Solution.scala) |	 The Total is Right - Weird edition |		|

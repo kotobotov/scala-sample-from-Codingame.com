@@ -33,7 +33,7 @@ Dead men's shot |	 ASCII ART : Glass Stacking |	 Castle Siege |	 Dungeon Designe
 Encryption/Decryption of Enigma Machine |	 [Bender - Episode 1](src/main/scala/Bender_Episode1/Solution.scala)  |	 Chess cavalry |	 Haunted Manor |
 Expand the polynomial |	 Bingo! |	 Chess moves on FEN position |	 Heart of the City |
 Ghost Legs |	 Box of Cigars |	 Code your own Automaton2000, step 1 |	 High-rise buildings |
-Gravity Tumbler |	 Brackets, Enhanced Edition |	 Connect four |	 Hitori solver |
+Gravity Tumbler |	 [Brackets, Enhanced Edition](src/main/scala/Brackets_enhanced/Solution.scala) |	 Connect four |	 Hitori solver |
 Guessing n Cheating |	 Brackets, Extended Edition |	 Cryptarithm |	 Hourglass |
 [Horse-racing Duals](src/main/scala/Horse-racing/Solution.scala) |	 Brackets, Ultimate Edition |	 Disks intersection |	 Longest Palindrome |
 Horse-racing Hyperduals |	 Bruce Lee |	 Dominoes solver |	 Mars Lander - Episode 3 |

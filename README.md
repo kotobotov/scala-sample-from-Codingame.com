@@ -28,7 +28,7 @@ Carmichael numbers |	 Ancestors & Descendants |	 Boggle |	 Cross the lines |
 [Chuck Norris](src/main/scala/Chuck-Norris/Solution.scala)  |	 ANEO Sponsored Puzzle |	 Breakout |	 Cubax Folding |
 Darts |	 Army ants |	 Candies |	 Divide the factorial |
 Dead men's shot |	 ASCII ART : Glass Stacking |	 Castle Siege |	 Dungeon Designer |
-[Defibrillators](src/main/scala/Defebrilators/Solution.scala) |	 Ascii Graph |	 CGX Formatter |	 Fill the square! |
+[Defibrillators](src/main/scala/Defebrilators/Solution.scala) |	 Ascii Graph |	 [CGX Formatter](src/main/scala/CGX_formatter/Solution.scala) |	 Fill the square! |
 [Disordered First Contact](src/main/scala/Disordered_First_Contact/Solution.scala) |	 Bag of Balls |	 Cheat Solving |	 Flood the World |
 Encryption/Decryption of Enigma Machine |	 [Bender - Episode 1](src/main/scala/Bender_Episode1/Solution.scala)  |	 Chess cavalry |	 Haunted Manor |
 Expand the polynomial |	 Bingo! |	 Chess moves on FEN position |	 Heart of the City |

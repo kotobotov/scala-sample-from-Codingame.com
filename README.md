@@ -55,7 +55,7 @@ Rugby score |	 Dominoes Path | [Google Interview - The Two Egg Problem](src/main
 Self-driving car testing | [Don't Panic - Episode 1](src/main/scala/Don't_Panic_Episode_1/Player.scala) |	 Hangman |	 The Crime Scene |
 Simple Awal? |	[Dwarfs standing on the shoulders of giants](src/main/scala/Dwarfs_standing_on_the_shoulders_of_giants/Solution.scala) |	 Hanoi tower |	 The Last Crusade - Episode 3 |
  [Temperatures](src/main/scala/Temperature/Solution.scala) | [Elementary cellular automaton](src/main/scala/Cellular_automaton/Solution.scala) |	 Harmless Rooks |	 The Lucky Number |
-[The Descent](src/main/scala/The_Descent/Player.scala)|	 Enigma - 3 rotors without plugboard |	 Highest truncated pyramid |	 The Resistance |
+[The Descent](src/main/scala/The_Descent/Player.scala)|	 Enigma - 3 rotors without plugboard |	 Highest truncated pyramid |	 [The Resistance](src/main/scala/The_Resistance/Solution.scala) |
 The River I. |	 Find the replacement |	 Hill Notation and Hill Order |	 The two piles difference |
 The River II. |	 Flood fill Example |	 Hit the road |	 The water jug riddle from Die Hard 3 |
 The Travelling Salesman Problem |	 Folding Paper |	 Horn-SAT solver |	 Ticket to Ride: Europe |

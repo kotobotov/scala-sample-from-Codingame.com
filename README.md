@@ -18,7 +18,7 @@ Challenge | Ranking
 | Easy | Medium | Hard | Expert | 
 | :---: | :---: | :---: | :---: | 
 [1x1x1 Rubik's cube movements](src/main/scala/Cubik1/Solution.scala) |	 1010(1) |	 7-segment display |	 Binary neural network - Part 1 |
-Add'em Up |	 2-player game on a calculator |	 Alternative vote |	 Binary neural network - Part 2 |
+[Add'em Up](src/main/scala/Add_em_Up/Solution.scala) |	 2-player game on a calculator |	 Alternative vote |	 Binary neural network - Part 2 |
 [ASCII Art](src/main/scala/ASCII-art/Solution.scala) |	 2x2x2 Rubik's cube movements |	 Anagrams |	 Bulls and Cows |
 Balanced ternary computer: encode |	 2.5D maze |	 Apple tree |	 CG Chat interpreter - Part 1 |
 [Bank Robbers](src/main/scala/Bank_Robbers/Solution.scala)|	 2048 scores |	 Bender - Episode 2 |	 Chemical Equation Balancing |

@@ -1,17 +1,9 @@
 # Codingame ai algorithms challenges
 
 Some of my solution for [Codingame](http://www.codingame.com/) platform. Here is [my profile](https://www.codingame.com/profile/e29f203c7aeab86de5da14fa8898d5cd5437171).
-more info about me and my projects at [kotobotov.ru](http://kotobotov.ru)
+more info about me and my projects at [kotobotov.ru](https://kotobotov.ru)
 
 feel free so add some solution's
-
-### Challenges `Scala`:
-
-Challenge | Ranking
-| :---: | :---:|
-[Chost in the Cell](src/main/scala/Ghost_in_the_Cell/Player.scala)  | 566/3508
-[The Great Escape](src/main/scala/The_Great_Escape/Player.scala)  | 1450/2863
-[Coders Strike Back](src/main/scala/Coders_Strike_Back/Player.scala)  | 2285/29505
 
 ### Solved problems `Scala`:
 

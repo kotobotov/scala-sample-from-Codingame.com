@@ -3,6 +3,8 @@
 Some of my solution for [Codingame](http://www.codingame.com/) platform. Here is [my profile](https://www.codingame.com/profile/e29f203c7aeab86de5da14fa8898d5cd5437171).
 more info about me and my projects at [kotobotov.ru](https://kotobotov.ru)
 
+
+all puzzles can be found here -> [https://www.codingame.com/training](https://www.codingame.com/training)
 feel free so add some solution's
 
 ### Solved problems `Scala`:

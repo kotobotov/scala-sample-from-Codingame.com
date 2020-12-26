@@ -55,7 +55,7 @@ The River II. |	 Flood fill Example |	 Hit the road |	 The water jug riddle from
 The Travelling Salesman Problem |	 Folding Paper |	 Horn-SAT solver |	 Ticket to Ride: Europe |
 What's so complex about Mandelbrot? |	 Game of life |	 Inertia ride |	 Unflood The World |
 XML MDF-2016 |	 Gravity Centrifuge Tuning |	 KGood |	 Unfolding paper |
-_ |  	 Gravity Centrifuge |	 Kolakoski Sequence |	 Vox Codei - Episode 2 |
+[Prefix code](src/main/scala/Prefix_code/Solution.scala) |  	 Gravity Centrifuge |	 Kolakoski Sequence |	 Vox Codei - Episode 2 |
 _ |	 Gravity |	 Laser and mirrors |	 Xorandor |
 _ |	 Hidden word |	 Levenshtein distance |		|
 _ |	 Horse-hyperracing Hyperduals |	 Magic count of numbers |		|

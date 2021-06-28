@@ -56,7 +56,7 @@ The Travelling Salesman Problem |	 Folding Paper |	 Horn-SAT solver |	 Ticket to
 What's so complex about Mandelbrot? |	 Game of life |	 Inertia ride |	 Unflood The World |
 XML MDF-2016 |	 Gravity Centrifuge Tuning |	 KGood |	 Unfolding paper |
 [Prefix code](src/main/scala/Prefix_code/Solution.scala) |  	 Gravity Centrifuge |	 Kolakoski Sequence |	 Vox Codei - Episode 2 |
-_ |	 Gravity |	 Laser and mirrors |	 Xorandor |
+[Create-the-longest-sequence-of-1s](src/main/scala/LONGEST_1S/Solution.scala) |	 Gravity |	 Laser and mirrors |	 Xorandor |
 _ |	 Hidden word |	 Levenshtein distance |		|
 _ |	 Horse-hyperracing Hyperduals |	 Magic count of numbers |		|
 _ |	 HTML table cell split |	 Max Rect |		|

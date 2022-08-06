@@ -16,7 +16,7 @@ feel free so add some solution's
 [ASCII Art](src/main/scala/ASCII-art/Solution.scala) |	 2x2x2 Rubik's cube movements |	 Anagrams |	 Bulls and Cows |
 Balanced ternary computer: encode |	 2.5D maze |	 Apple tree |	 CG Chat interpreter - Part 1 |
 [Bank Robbers](src/main/scala/Bank_Robbers/Solution.scala)|	 2048 scores |	 Bender - Episode 2 |	 Chemical Equation Balancing |
-[Brackets, extreme edition.](src/main/scala/Brackets_extreme/Solution.scala) |	[A-star exercise](src/main/scala/Astar/Solution.scala) |	 Bender - Episode 3 |	 CodinDice |
+Brackets extreme edition. [Scala 1](src/main/scala/Brackets_extreme/Solution.scala), [Scala 2](src/main/scala/Brackets_extreme/SolutionScala2.scala), [Python](src/main/scala/Brackets_extreme/Solution.py), [Js](src/main/scala/Brackets_extreme/Solution.js) , [Bash](src/main/scala/Brackets_extreme/Solution.sh) |	[A-star exercise](src/main/scala/Astar/Solution.scala) |	 Bender - Episode 3 |	 CodinDice |
 Bulk Email Generator |	 Advanced Tree |	 Binary Permutations |	 Completed Mahjong Hands |
 Carmichael numbers |	 Ancestors & Descendants |	 Boggle |	 Cross the lines |
 [Chuck Norris](src/main/scala/Chuck-Norris/Solution.scala)  |	 ANEO Sponsored Puzzle |	 Breakout |	 Cubax Folding |

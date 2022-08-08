@@ -12,13 +12,13 @@ local stack=$2
 
 case $head in
 "")
-    echo $stack EMPTY
+    echo $stack
     ;;
 \{|\<|\[\).*)
     echo $(helper $tail $head$stack)
     ;;
 \}|\>|\]\).*)
-    [[ ${ClosingPartForBracet[${stack:0:1}]}==$head ]] && echo $(helper $tail ${stack:1}) || echo "false"
+    [[ ${ClosingPartForBracet[${stack:0:1}]} = $head ]] && echo $(helper $tail ${stack:1}) || echo "false"
     ;;
 *)
     echo $(helper $tail $stack)
@@ -26,4 +26,4 @@ case $head in
 esac
 }
 
-[[ $(helper $1 "")=='' ]] && echo 'true' || echo 'false'
+[[ $(helper $1 "") == '' ]] && echo 'true' || echo 'false'

@@ -3,7 +3,6 @@ function process(){
 declare -A ClosingPartForBracet
 ClosingPartForBracet[\{]="}"
 ClosingPartForBracet[\(]=")"
-ClosingPartForBracet[\<]=">"
 ClosingPartForBracet[\[]="]"
 
 function helper(){
@@ -19,7 +18,7 @@ function helper(){
         echo $(helper "$tail" "$head$stack")
         ;;
     [\]\)\}\)\>])
-        [[ ! -z "$stack" && ${ClosingPartForBracet["${stack:0:1}"]} = $head ]] && echo $(helper "$tail" "${stack:1}") || echo "TerminateWithNonEmtpy"
+        [[ "$stack" != "" && ${ClosingPartForBracet["${stack:0:1}"]} = $head ]] && echo $(helper "$tail" "${stack:1}") || echo "TerminateWithNonEmtpy"
         ;;
     *)
         echo $(helper "$tail" "$stack")

@@ -4,6 +4,7 @@ ClosingPartForBracet[\(]=")"
 ClosingPartForBracet[\<]=">"
 ClosingPartForBracet[\[]="]"
 
+read -r expression
 
 function helper(){
 local head=${1:0:1}
@@ -14,16 +15,16 @@ case $head in
 "")
     echo $stack
     ;;
-\{|\<|\[\).*)
-    echo $(helper $tail $head$stack)
+[\[\(\{\(\<])
+    echo $(helper "$tail" "$head$stack")
     ;;
-\}|\>|\]\).*)
-    [[ ${ClosingPartForBracet[${stack:0:1}]} = $head ]] && echo $(helper $tail ${stack:1}) || echo "false"
+[\]\)\}\)\>])
+    [[ ! -z "$stack" && "${ClosingPartForBracet["${stack:0:1}"]}" = $head ]] && echo $(helper "$tail" "${stack:1}") || echo "false"
     ;;
 *)
-    echo $(helper $tail $stack)
+    echo $(helper "$tail" "$stack")
     ;;
 esac
 }
 
-[[ $(helper $1 "") == '' ]] && echo 'true' || echo 'false'
+[[ $(helper $expression "") == "" ]] && echo 'true' || echo 'false'
